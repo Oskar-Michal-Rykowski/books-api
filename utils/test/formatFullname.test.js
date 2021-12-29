@@ -12,7 +12,7 @@ describe('formatFullname', () => {
     expect(formatFullname('undefined')).to.equal('Error');
     expect(formatFullname('un de fined')).to.equal('Error');
   });
-  it('should return an error if "fullName" has not been corrected', () => {
+  it("should return an error if function doesn't work correctly", () => {
     expect(formatFullname('Ada Kowalska')).to.equal('Ada Kowalska');
     expect(formatFullname('AdA KOWAlskA')).to.equal('Ada Kowalska');
     expect(formatFullname('aDA kOWALSKA')).to.equal('Ada Kowalska');
