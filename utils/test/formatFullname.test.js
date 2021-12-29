@@ -8,11 +8,11 @@ describe('formatFullname', () => {
     expect(formatFullname({})).to.equal('Error');
     expect(formatFullname([])).to.equal('Error');
   });
-  it('should return an error if "fullName" contains more then two words', () => {
+  it('should return an error if "fullName" doesn\'t contain exactly two words', () => {
     expect(formatFullname('undefined')).to.equal('Error');
     expect(formatFullname('un de fined')).to.equal('Error');
   });
-  it('should return an error if "fullName" contains more then two words', () => {
+  it('should return an error if "fullName" has not been corrected', () => {
     expect(formatFullname('Ada Kowalska')).to.equal('Ada Kowalska');
     expect(formatFullname('AdA KOWAlskA')).to.equal('Ada Kowalska');
     expect(formatFullname('aDA kOWALSKA')).to.equal('Ada Kowalska');
